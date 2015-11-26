@@ -18,7 +18,7 @@ angular.module('stockDogApp')
   		if (quotes.length === stocks.length) {
   			_.each(quotes, function(quote, idx) {
   				var stock = stocks[idx];
-  				stock.lastPrice = parseFloat(quote.LastTradePriceOnly);
+				stock.lastPrice = parseFloat(quote.LastTradePriceOnly);
   				stock.change = quote.Change;
   				stock.percentChange = quote.ChangeinPercent;
   				stock.marketValue = stock.shares * stock.lastPrice;
